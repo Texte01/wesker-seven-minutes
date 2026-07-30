@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Complete as frases — IA</title>
+  <link rel="stylesheet" href="ia-completa-frases/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Complete as frases com palavras relacionadas à IA</h1>
+    <p class="instructions">Arraste a palavra correta para o espaço em branco da frase. Você pode tentar quantas vezes quiser.</p>
+
+    <section id="game" class="game">
+      <div class="phrases">
+        <div class="phrase" data-expected="modelo">
+          <span class="text">Um _____ é treinado para fazer previsões a partir de dados.</span>
+          <div class="dropzone" aria-label="espaço 1" tabindex="0">&nbsp;</div>
+        </div>
+
+        <div class="phrase" data-expected="dados">
+          <span class="text">A qualidade dos _____ determina muito do sucesso do sistema.</span>
+          <div class="dropzone" aria-label="espaço 2" tabindex="0">&nbsp;</div>
+        </div>
+
+        <div class="phrase" data-expected="treinamento">
+          <span class="text">O processo de _____ ajusta os parâmetros do modelo.</span>
+          <div class="dropzone" aria-label="espaço 3" tabindex="0">&nbsp;</div>
+        </div>
+
+        <div class="phrase" data-expected="prompt">
+          <span class="text">Ao usar um LLM, você fornece um _____ para orientar a geração.</span>
+          <div class="dropzone" aria-label="espaço 4" tabindex="0">&nbsp;</div>
+        </div>
+
+        <div class="phrase" data-expected="inferência">
+          <span class="text">Executar o modelo em produção chama-se _____.</span>
+          <div class="dropzone" aria-label="espaço 5" tabindex="0">&nbsp;</div>
+        </div>
+      </div>
+
+      <aside class="words" aria-label="palavras disponíveis">
+        <h2>Palavras</h2>
+        <ul id="wordBank">
+          <li class="word" draggable="true" data-value="treinamento">treinamento</li>
+          <li class="word" draggable="true" data-value="dados">dados</li>
+          <li class="word" draggable="true" data-value="prompt">prompt</li>
+          <li class="word" draggable="true" data-value="modelo">modelo</li>
+          <li class="word" draggable="true" data-value="inferência">inferência</li>
+        </ul>
+
+        <div class="controls">
+          <button id="checkBtn">Verificar respostas</button>
+          <button id="resetBtn">Reiniciar</button>
+        </div>
+        <div id="result" class="result" aria-live="polite"></div>
+      </aside>
+    </section>
+
+    <footer>
+      <p>Feito para exercícios simples sobre IA — arraste e solte para aprender vocabulário.</p>
+    </footer>
+  </main>
+
+  <script src="ia-completa-frases/script.js"></script>
+</body>
+</html>
