@@ -301,12 +301,12 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎮 Jogo de Palavras</h1>
-            <p>Arraste as palavras para completar as frases</p>
+            <h1>🤖 IA na Programação</h1>
+            <p>Arraste as palavras para completar as frases sobre IA e desenvolvimento</p>
         </div>
 
         <div class="score-section">
-            <div class="score">Acertos: <span id="correct">0</span> / <span id="total">5</span></div>
+            <div class="score">Acertos: <span id="correct">0</span> / <span id="total">8</span></div>
             <div class="level-info">Nível: <span id="level">1</span></div>
         </div>
 
@@ -327,44 +327,44 @@
     <script>
         const phrases = [
             {
-                phrase: "O ",
-                blanks: ["gato"],
-                options: ["gato", "cão", "pássaro", "peixe"]
+                phrase: "Um ",
+                blanks: ["modelo"],
+                options: ["modelo", "array", "loop", "função"]
+            },
+            {
+                phrase: "A qualidade dos ",
+                blanks: ["dados"],
+                options: ["dados", "códigos", "testes", "commits"]
+            },
+            {
+                phrase: "O processo de ",
+                blanks: ["treinamento"],
+                options: ["treinamento", "compilação", "debugging", "refatoração"]
+            },
+            {
+                phrase: "Ao usar um LLM, você fornece um ",
+                blanks: ["prompt"],
+                options: ["prompt", "parâmetro", "algoritmo", "banco de dados"]
+            },
+            {
+                phrase: "Executar o modelo em produção chama-se ",
+                blanks: ["inferência"],
+                options: ["inferência", "deploy", "teste", "verificação"]
+            },
+            {
+                phrase: "A IA ajuda a otimizar ",
+                blanks: ["algoritmos"],
+                options: ["algoritmos", "variáveis", "comentários", "indentação"]
+            },
+            {
+                phrase: "Um assistente de IA pode gerar ",
+                blanks: ["código"],
+                options: ["código", "bug", "erro", "crash"]
             },
             {
                 phrase: "A ",
-                blanks: ["maçã"],
-                options: ["maçã", "banana", "laranja", "uva"]
-            },
-            {
-                phrase: "Eu ",
-                blanks: ["gosto"],
-                options: ["gosto", "odeio", "adoro", "prefiro"]
-            },
-            {
-                phrase: "O ",
-                blanks: ["sol"],
-                options: ["sol", "lua", "estrela", "nuvem"]
-            },
-            {
-                phrase: "Meu ",
-                blanks: ["livro"],
-                options: ["livro", "caneta", "caderno", "mochila"]
-            },
-            {
-                phrase: "A ",
-                blanks: ["chuva"],
-                options: ["chuva", "neve", "granizo", "geada"]
-            },
-            {
-                phrase: "Nós ",
-                blanks: ["corremos"],
-                options: ["corremos", "pulamos", "dançamos", "saltamos"]
-            },
-            {
-                phrase: "A cor azul é como o ",
-                blanks: ["céu"],
-                options: ["céu", "mar", "tinta", "vidro"]
+                blanks: ["programação"],
+                options: ["programação", "escrita", "leitura", "memorização"]
             }
         ];
 
